@@ -97,6 +97,12 @@ h1 {
   text-align: center;
   padding: 2% 0 1% 2%;
 }
+h1.otherpages {
+  text-align: center;
+  color: #720026;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
 p {
   font-family: 'Montserrat', sans-serif;
   padding: 1% 2%;
@@ -158,6 +164,8 @@ header {
 .centerpics figure img {
   width: 100%;
   max-width: 400px;
+  display: block;
+  margin: auto;
 }
 footer {
   display: -webkit-box;
@@ -190,12 +198,6 @@ footer figure img {
     display: none;
   }
   article figure img {
-    display: block;
-    margin: auto;
-  }
-}
-@media (min-width: 992px) {
-  .centerpics figure img {
     display: block;
     margin: auto;
   }

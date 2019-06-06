@@ -57,6 +57,13 @@ h1 {
   padding: 2% 0 1% 2%;
 }
 
+h1.otherpages {
+  text-align: center;
+  color: @color-red;
+  font-family: @font-body;
+  letter-spacing: 3px; 
+}
+
 p {
   font-family: @font-body;
   padding: 1% 2%;
@@ -89,7 +96,7 @@ header {
     .brownh2();
   }
   p {
-    color: @color-darkbrown; 
+    color: @color-darkbrown;
   }
 }
 
@@ -123,7 +130,10 @@ header {
 .centerpics figure img {
   width: 100%;
   max-width: 400px;
+  display: block;
+  margin: auto;
 }
+
 
 footer {
   display: flex;
@@ -156,8 +166,5 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .centerpics figure img {
-    display: block;
-    margin: auto;
-  }
+
 }
