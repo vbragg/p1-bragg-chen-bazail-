@@ -126,6 +126,9 @@ header {
   font-size: 2.1875rem;
   text-align: center;
 }
+.offwhite p {
+  color: #3d2c2e;
+}
 .pink {
   background-color: #e5cac0;
 }
