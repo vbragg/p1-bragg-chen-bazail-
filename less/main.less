@@ -85,6 +85,9 @@ header {
 
 .offwhite {
   background-color: @color-white;
+  h2 {
+    .brownh2();
+  }
 }
 
 .pink {
@@ -93,15 +96,30 @@ header {
 
 .red {
   background-color: @color-red;
+  h2 {
+    .whiteh2 ();
+  }
 }
 
 .white {
   background-color: @true-white;
 }
 
- main figure img{
+.brown {
+  background-color: @color-brown;
+  h2 {
+    .whiteh2 ();
+  }
+}
+
+ .maxheightpics figure img{
   height: 500px;
   max-height: 550px;
+}
+
+.centerpics figure img {
+  width: 100%;
+  max-width: 400px;
 }
 
 footer {
@@ -110,7 +128,7 @@ footer {
   justify-content: center;
   padding: 2%;
   figure img {
-    padding: 5%; 
+    padding: 5%;
   }
 }
 
@@ -129,6 +147,13 @@ footer {
   }
 
   article figure img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .centerpics figure img {
     display: block;
     margin: auto;
   }

@@ -1,3 +1,13 @@
+.whiteh2 {
+  color: #f4f2f3;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.brownh2 {
+  color: #3d2c2e;
+  font-size: 2.1875rem;
+  text-align: center;
+}
 /*****this is controlling hamburger menu *****/
 .hamburger {
   background: none;
@@ -111,18 +121,40 @@ header {
 .offwhite {
   background-color: #f4f2f3;
 }
+.offwhite h2 {
+  color: #3d2c2e;
+  font-size: 2.1875rem;
+  text-align: center;
+}
 .pink {
   background-color: #e5cac0;
 }
 .red {
   background-color: #720026;
 }
+.red h2 {
+  color: #f4f2f3;
+  font-size: 2.1875rem;
+  text-align: center;
+}
 .white {
   background-color: #ffffff;
 }
-main figure img {
+.brown {
+  background-color: #6b4b4c;
+}
+.brown h2 {
+  color: #f4f2f3;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.maxheightpics figure img {
   height: 500px;
   max-height: 550px;
+}
+.centerpics figure img {
+  width: 100%;
+  max-width: 400px;
 }
 footer {
   display: -webkit-box;
@@ -155,6 +187,12 @@ footer figure img {
     display: none;
   }
   article figure img {
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .centerpics figure img {
     display: block;
     margin: auto;
   }

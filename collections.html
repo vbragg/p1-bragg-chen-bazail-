@@ -8,12 +8,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
     <title>Collections</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Yeseva+One&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body>
+
+    <button class="hamburger">&#9776; </button>
+    <button class="cross">&#735;</button>
+
     <header>
-      <img src="img/MOBILE VERSION LOGO" alt="koko logo" title="koko logo"> <!--hide in desktop version-->
-      <img src="img/DESKTOP VERSION LOGO" alt="koko logo" title="koko logo"> <!--hide in mobile version-->
+      <img src="img/mobile_logo.png" alt="koko logo" title="koko logo" class="mobilelogo"> <!--hide in desktop version-->
+      <img src="img/desktop_logo.png" alt="koko logo" title="koko logo" class="desktoplogo"> <!--hide in mobile version-->
 
       <nav class="menu">
         <ul>
@@ -26,58 +37,73 @@
       </nav>
 
       <nav class="desktopnav">
-        <ul>
-          <li><a link="index.html">Home</a></li>
-          <li><a link="index.html">About</a></li>
-          <li><a link="recipes.html">Recipes</a></li>
-          <li><a link="collections.html">Collections</a></li>
-          <li><a link="contact.html">Contact</a></li>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">About</a></li>
+          <li class="nav-item"><a href="recipes.html" class="nav-link active">Recipes</a></li>
+          <li class="nav-item"><a href="collections.html" class="nav-link active">Collections</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
       </nav>
-
-
 
     </header>
     <h1>COLLECTIONS</h1>
 
     <main class="container-fluid">
-      <section class="row">
-        <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
-        </figure>
-        <article class="col-sm-12 col-md-5">
-          <h2>Original</h2>
-          <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
-          </p>
-        </article>
-      </section>
+      <div class="centerpics">
+      <section class="red">
+        <div class="row">
+          <figure class="col-sm-12 col-lg-5">
+            <img src="img/koko5.jpg" alt="hot chocolate" title="Hot chocolate mugs">
+          </figure>
+          <article class="col-sm-12 col-lg-7">
+            <h2>Original</h2>
+            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
+            </p>
+          </article>
+        </div>
+        </section>
 
-      <section class="row">
-        <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
-        </figure>
-        <article class="col-sm-12 col-md-5">
-          <h2>CLOUDS</h2>
-          <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
-          </p>
-        </article>
-      </section>
+      <section class="offwhite">
+        <div class="row">
+          <figure class="col-sm-12 col-lg-5">
+            <img src="img/koko.jpg" alt="chocolate" title="Scattered Chocolate">
+          </figure>
+          <article class="col-sm-12 col-lg-7">
+            <h2>CLOUDS</h2>
+            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
+            </p>
+          </article>
+        </div>
+        </section>
 
-      <section class="row">
-        <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
-        </figure>
-        <article>
-          <h2>SOOTHE</h2>
-          <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
-          </p>
-        </article>
-      </section>
-
+      <section class="brown">
+        <div class="row">
+          <figure class="col-sm-12 col-lg-5">
+            <img src="img/koko7.jpg" alt="chocolate milk" title="Chocolate Whipped milk">
+          </figure>
+          <article class="col-sm-12 col-lg-7">
+            <h2>SOOTHE</h2>
+            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
+            </p>
+          </div>
+          </article>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <script src="js/hamburger.js"> </script>
 
+    <footer>
+      <figure>
+        <img src="img/facebook.png" alt="Facebook" title="Facebook">
+      </figure>
+      <figure>
+        <img src="img/instagram.png" alt="Instagram" title="Instagram">
+      </figure>
+      <figure>
+        <img src="img/twitter.png" alt="Twitter" title="Twitter">
+      </figure>
     </footer>
 
 
