@@ -135,6 +135,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2%;
+}
+footer figure img {
+  padding: 5%;
 }
 @media (min-width: 768px) {
   .desktopnav {
