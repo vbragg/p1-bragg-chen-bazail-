@@ -91,6 +91,20 @@ p {
   font-family: 'Montserrat', sans-serif;
   padding: 1% 2%;
 }
+section {
+  padding-bottom: 2%;
+}
+article p {
+  text-align: center;
+  color: #f4f2f3;
+}
+article a:link {
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px;
+  border: 1px solid #ffffff !important;
+  border-radius: 5px;
+  text-align: center;
+}
 header {
   background-color: #f4f2f3;
 }
@@ -123,14 +137,21 @@ footer {
           justify-content: center;
 }
 @media (min-width: 768px) {
-  .desktopnav,
+  .desktopnav {
+    display: block;
+  }
   .desktoplogo {
     display: block;
+    margin: auto;
   }
   .menu,
   .mobilelogo,
   .hamburger,
   .cross {
     display: none;
+  }
+  article figure img {
+    display: block;
+    margin: auto;
   }
 }

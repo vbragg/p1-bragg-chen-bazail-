@@ -61,6 +61,23 @@ p {
   font-family: @font-body;
   padding: 1% 2%;
 }
+section {
+  padding-bottom: 2%;
+}
+
+article {
+  p {
+    text-align: center;
+    color: @color-white;
+  }
+    a:link {
+      font-family: @font-body;
+      padding: 8px;
+      border: 1px solid #ffffff !important;
+      border-radius: 5px;
+      text-align: center;
+    }
+}
 
 header {
   background-color: @color-white;
@@ -94,10 +111,21 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .desktopnav, .desktoplogo {
+    .desktopnav {
     display: block;
   }
+
+  .desktoplogo {
+    display: block;
+    margin: auto;
+  }
+
   .menu, .mobilelogo, .hamburger, .cross {
     display: none;
+  }
+
+  article figure img {
+    display: block;
+    margin: auto;
   }
 }
