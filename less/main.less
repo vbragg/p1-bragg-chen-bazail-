@@ -61,7 +61,7 @@ h1.otherpages {
   text-align: center;
   color: @color-red;
   font-family: @font-body;
-  letter-spacing: 3px; 
+  letter-spacing: 3px;
 }
 
 p {
@@ -80,9 +80,12 @@ article {
     a:link {
       font-family: @font-body;
       padding: 8px;
-      border: 1px solid #ffffff !important;
+      border: 1px solid #ffffff !important; /*THIS ISN'T WORKING */
       border-radius: 5px;
       text-align: center;
+    }
+    .border {
+      border: 10px solid red !important; /* THIS ISN'T WORKING */ 
     }
 }
 
@@ -102,6 +105,12 @@ header {
 
 .pink {
   background-color: @color-pink;
+  h2 {
+    .brownh2();
+  }
+  p {
+    color: @color-darkbrown;
+  }
 }
 
 .red {

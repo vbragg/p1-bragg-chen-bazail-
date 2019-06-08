@@ -118,8 +118,13 @@ article a:link {
   font-family: 'Montserrat', sans-serif;
   padding: 8px;
   border: 1px solid #ffffff !important;
+  /*THIS ISN'T WORKING */
   border-radius: 5px;
   text-align: center;
+}
+article .border {
+  border: 10px solid red !important;
+  /* THIS ISN'T WORKING */
 }
 header {
   background-color: #f4f2f3;
@@ -137,6 +142,14 @@ header {
 }
 .pink {
   background-color: #e5cac0;
+}
+.pink h2 {
+  color: #3d2c2e;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.pink p {
+  color: #3d2c2e;
 }
 .red {
   background-color: #720026;
