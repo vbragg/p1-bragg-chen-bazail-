@@ -8,21 +8,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
     <title>Recipes</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Yeseva+One&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
-      <img src="img/MOBILE VERSION LOGO" alt="koko logo" title="koko logo"> <!--hide in desktop version-->
-      <img src="img/DESKTOP VERSION LOGO" alt="koko logo" title="koko logo"> <!--hide in mobile version-->
+      <img src="img/mobile_logo.png" alt="koko logo" title="koko logo"> <!--hide in desktop version-->
+      <img src="img/desktop_logo.png" alt="koko logo" title="koko logo"> <!--hide in mobile version-->
 
-      <nav>
+      <nav class="menu">
         <ul>
-          <li><a link="index.html">Home</a></li>
-          <li><a link="index.html">About</a></li>
-          <li><a link="recipes.html">Recipes</a></li>
-          <li><a link="collections.html">Collections</a></li>
-          <li><a link="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a> </li>
         </ul>
+      </nav>
+
+      <nav class="desktopnav">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">About</a></li>
+          <li class="nav-item"><a href="recipes.html" class="nav-link active">Recipes</a></li>
+          <li class="nav-item"><a href="collections.html" class="nav-link active">Collections</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
 
 
     </header>
@@ -31,7 +48,7 @@
     <main>
       <section class="row">
         <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
+          <img src="img/koko20.png" alt="chocolate ice cream scoop" title="Chocolate ice cream">
         </figure>
         <article class="col-sm-12 col-md-5">
           <h2>koko cream</h2>
@@ -42,7 +59,7 @@
 
       <section class="row">
         <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
+          <img src="img/koko15.png" alt="chocolate milkshake" title="Triple Chocolate Milkshake">
         </figure>
         <article class="col-sm-12 col-md-5">
           <h2>koko cream</h2>
@@ -53,9 +70,9 @@
 
       <section class="row">
         <figure class="col-sm-12 col-md-7">
-          <img src="img/PLACEHOLDER" alt="" title="">
+          <img src="img/koko6.png" alt="chocolate bars" title="koko Chocolate bars">
         </figure>
-        <article>
+        <article class="col-sm-12 col-md-5">
           <h2>koko bars</h2>
           <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
           </p>
@@ -64,9 +81,11 @@
 
     </main>
 
+    <script src="js/hamburger.js"> </script>
+
     <footer>
 
-    </footer> 
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
