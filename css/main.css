@@ -126,6 +126,9 @@ article .border {
   border: 10px solid red !important;
   /* THIS ISN'T WORKING */
 }
+.leftalign {
+  text-align: left;
+}
 header {
   background-color: #f4f2f3;
 }
