@@ -175,6 +175,7 @@ header {
 }
 .maxheightpics figure img {
   height: 500px;
+  /*JUst changed this from 500px, need to see if this messes anything up on other pages */
   max-height: 550px;
 }
 .centerpics figure img {
