@@ -8,6 +8,9 @@
   font-size: 2.1875rem;
   text-align: center;
 }
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
 /*****this is controlling hamburger menu *****/
 .hamburger {
   background: none;
@@ -83,30 +86,19 @@
   text-decoration: none;
   color: #666;
 }
-/*hamburger menu ends */
+/*hamburger menu ends*/
 .desktopnav,
 .desktoplogo {
   display: none;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Yeseva One', cursive;
+.jumbotron {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: none;
 }
-h1 {
-  text-align: center;
-  padding: 2% 0 1% 2%;
-}
-h1.otherpages {
-  text-align: center;
-  color: #720026;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
-}
-p {
-  font-family: 'Montserrat', sans-serif;
-  padding: 1% 2%;
-}
+/* -----------------------------------
+...............BODY...................
+----------------------------------- */
 section {
   padding-bottom: 2%;
 }
@@ -125,9 +117,6 @@ article a:link {
 article .border {
   border: 10px solid red !important;
   /* THIS ISN'T WORKING */
-}
-.leftalign {
-  text-align: left;
 }
 header {
   background-color: #f4f2f3;
@@ -184,22 +173,58 @@ header {
   display: block;
   margin: auto;
 }
+/* -----------------------------------
+.............TYPOGRAPHY...............
+----------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: 'Yeseva One', cursive;
+}
+h1 {
+  text-align: center;
+  padding: 2% 0 1% 2%;
+}
+h1.otherpages {
+  text-align: center;
+  color: #720026;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1% 2%;
+}
+/* -----------------------------------
+...............FOOTER.................
+----------------------------------- */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: center;
   padding: 2%;
 }
 footer figure img {
   padding: 5%;
 }
+/* -----------------------------------
+................MISC..................
+----------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #720026;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b4b4c;
+}
+/* -----------------------------------
+...........MEDIA QUERIES..............
+----------------------------------- */
 @media (min-width: 768px) {
   .desktopnav {
     display: block;
@@ -217,5 +242,15 @@ footer figure img {
   article figure img {
     display: block;
     margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .jumbotron {
+    padding: 0;
+  }
+  .jumbotron img {
+    width: 150%;
+    position: relative;
+    left: -50%;
   }
 }

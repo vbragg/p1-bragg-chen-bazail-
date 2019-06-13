@@ -1,7 +1,8 @@
 @import "variables";
-
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
 /*****this is controlling hamburger menu *****/
-
 .hamburger{
   background:none;
   position:absolute;
@@ -42,32 +43,19 @@
 .menu a:hover{text-decoration:none; color:#666;}
 
 
-/*hamburger menu ends */
+/*hamburger menu ends*/
 
 .desktopnav, .desktoplogo {
   display: none;
 }
-
-h1, h2, h3 {
-  font-family: @font-headers;
+.jumbotron{
+  max-width: 1200px;
+  margin: 0 auto;
+  background: none;
 }
-
-h1 {
-  text-align: center;
-  padding: 2% 0 1% 2%;
-}
-
-h1.otherpages {
-  text-align: center;
-  color: @color-red;
-  font-family: @font-body;
-  letter-spacing: 3px;
-}
-
-p {
-  font-family: @font-body;
-  padding: 1% 2%;
-}
+/* -----------------------------------
+...............BODY...................
+----------------------------------- */
 section {
   padding-bottom: 2%;
 }
@@ -87,10 +75,6 @@ article {
     .border {
       border: 10px solid red !important; /* THIS ISN'T WORKING */
     }
-}
-
-.leftalign {
-  text-align: left;
 }
 
 header {
@@ -147,6 +131,33 @@ header {
   margin: auto;
 }
 
+/* -----------------------------------
+.............TYPOGRAPHY...............
+----------------------------------- */
+h1, h2, h3 {
+  font-family: @font-headers;
+}
+
+h1 {
+  text-align: center;
+  padding: 2% 0 1% 2%;
+}
+
+h1.otherpages {
+  text-align: center;
+  color: @color-red;
+  font-family: @font-body;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: @font-body;
+  padding: 1% 2%;
+}
+
+/* -----------------------------------
+...............FOOTER.................
+----------------------------------- */
 footer {
   display: flex;
   flex-flow: row nowrap;
@@ -156,7 +167,24 @@ footer {
     padding: 5%;
   }
 }
-
+/* -----------------------------------
+................MISC..................
+----------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: @color-red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: @color-brown;
+}
+/* -----------------------------------
+...........MEDIA QUERIES..............
+----------------------------------- */
 @media (min-width: 768px) {
     .desktopnav {
     display: block;
@@ -178,5 +206,13 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .jumbotron{
+    padding: 0;
+    img{
+      width: 150%;
+      position: relative;
+      left: -50%;
 
+    }
+  }
 }
