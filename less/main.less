@@ -44,7 +44,9 @@
 
 
 /*hamburger menu ends*/
-
+header {
+  background-color: @color-white;
+}
 .desktopnav, .desktoplogo {
   display: none;
 }
@@ -61,24 +63,13 @@ section {
 }
 
 article {
-  p {
-    text-align: center;
-    color: @color-white;
+  text-align: center;
+  figure img{
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
   }
-    a:link {
-      font-family: @font-body;
-      padding: 8px;
-      border: 1px solid #ffffff !important; /*THIS ISN'T WORKING */
-      border-radius: 5px;
-      text-align: center;
-    }
-    .border {
-      border: 10px solid red !important; /* THIS ISN'T WORKING */
-    }
-}
-
-header {
-  background-color: @color-white;
 }
 
 .offwhite {
@@ -106,10 +97,13 @@ header {
   h2 {
     .whiteh2 ();
   }
+  p{
+    color: @color-white;
+  }
 }
 
 .white {
-  background-color: @true-white;
+  background-color: @color-white;
 }
 
 .brown {
@@ -119,17 +113,16 @@ header {
   }
 }
 
- .maxheightpics figure img{
-  height: 500px; /*JUst changed this from 500px, need to see if this messes anything up on other pages */
-  max-height: 550px;
+
+.button {
+  font-family: @font-body;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  color: @color-white
 }
 
-.centerpics figure img {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: auto;
-}
 
 /* -----------------------------------
 .............TYPOGRAPHY...............
@@ -152,7 +145,7 @@ h1.otherpages {
 
 p {
   font-family: @font-body;
-  padding: 1% 2%;
+  max-width: 700px;
 }
 
 /* -----------------------------------
@@ -186,7 +179,7 @@ footer {
 ...........MEDIA QUERIES..............
 ----------------------------------- */
 @media (min-width: 768px) {
-    .desktopnav {
+  .desktopnav {
     display: block;
   }
 
@@ -198,11 +191,6 @@ footer {
   .menu, .mobilelogo, .hamburger, .cross {
     display: none;
   }
-
-  article figure img {
-    display: block;
-    margin: auto;
-  }
 }
 
 @media (min-width: 992px) {
@@ -212,7 +200,6 @@ footer {
       width: 150%;
       position: relative;
       left: -50%;
-
     }
   }
 }
