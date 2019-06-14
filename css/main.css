@@ -105,8 +105,15 @@ header {
 section {
   padding-bottom: 2%;
 }
+.welcome {
+  margin-bottom: 8%;
+  padding: 5rem 0 15rem 0;
+}
 article {
   text-align: center;
+  position: relative;
+  top: -20rem;
+  margin-bottom: -10rem;
 }
 article figure img {
   object-position: center;
