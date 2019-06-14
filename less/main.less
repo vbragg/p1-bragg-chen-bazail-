@@ -1,7 +1,8 @@
 @import "variables";
-
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
 /*****this is controlling hamburger menu *****/
-
 .hamburger{
   background:none;
   position:absolute;
@@ -42,77 +43,33 @@
 .menu a:hover{text-decoration:none; color:#666;}
 
 
-/*hamburger menu ends */
-
-.desktopnav, .desktoplogo {
-  display: none;
-}
-
-h1, h2, h3 {
-  font-family: @font-headers;
-}
-
-h1 {
-  text-align: center;
-  padding: 2% 0 1% 2%;
-}
-
-h1.otherpages {
-  text-align: center;
-  color: @color-red;
-  font-family: @font-body;
-  letter-spacing: 3px;
-}
-
-p {
-  font-family: @font-body;
-  padding: 1% 2%;
-}
-section {
-  padding-bottom: 2%;
-}
-
-article {
-  p {
-    text-align: center;
-    color: @color-white;
-  }
-    .button {
-      font-family: @font-body;
-      padding: 8px;
-      border: 1px solid #ffffff !important; /*THIS ISN'T WORKING */
-      border-radius: 5px;
-      text-align: center;
-      background-color: @color-red;
-      color: @color-white;
-    }
-    .border {
-      border: 10px solid red !important; /* THIS ISN'T WORKING */
-    }
-}
-
-form {
-  padding: 20px;
-  #exampleFormControlInput1, #exampleFormControlTextarea1 {
-    border-color: @color-red;
-  }
-  label {
-    font-family: @font-body;
-  }
-  button {
-    background-color: @color-red;
-    color: @color-white;
-  }
-}
-
-.leftalign {
-  text-align: left;
-}
-
+/*hamburger menu ends*/
 header {
   background-color: @color-white;
 }
-
+.navbar{
+  background-color: @color-white;
+  a{
+    width: 60%;
+  }
+  img{
+    width: 100%;
+    max-width: 250px;
+  }
+  font-family: @font-body;
+  text-transform: uppercase;
+}
+.jumbotron{
+  max-width: 1200px;
+  margin: 0 auto;
+  background: none;
+}
+/* -----------------------------------
+...............BODY...................
+----------------------------------- */
+section {
+  padding-bottom: 2%;
+}
 .offwhite {
   background-color: @color-white;
   h2 {
@@ -138,10 +95,13 @@ header {
   h2 {
     .whiteh2 ();
   }
+  p{
+    color: @color-white;
+  }
 }
 
 .white {
-  background-color: @true-white;
+  background-color: @color-white;
 }
 
 .brown {
@@ -151,21 +111,76 @@ header {
   }
 }
 
- .maxheightpics figure img{
-  height: 500px;
-  max-height: 550px;
+
+.button {
+  font-family: @font-body;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  color: @color-white
+}
+.gallery{
+  figure img{
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
-.centerpics figure img {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: auto;
+/* -----------------------------------
+.............TYPOGRAPHY...............
+----------------------------------- */
+h1, h2, h3 {
+  font-family: @font-headers;
 }
 
+h1 {
+  text-align: center;
+  padding: 2% 0 1% 2%;
+}
 
+h1.otherpages {
+  text-align: center;
+  color: @color-red;
+  font-family: @font-body;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: @font-body;
+  max-width: 700px;
+}
+
+/* -----------------------------------
+...............FOOTER.................
+----------------------------------- */
+footer {
+  padding: 2%;
+  figure img {
+    padding: 5%;
+  }
+}
+/* -----------------------------------
+................MISC..................
+----------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: @color-red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: @color-brown;
+}
+/* -----------------------------------
+...........MEDIA QUERIES..............
+----------------------------------- */
 @media (min-width: 768px) {
-    .desktopnav {
+  .desktopnav {
     display: block;
   }
 
@@ -177,9 +192,30 @@ header {
   .menu, .mobilelogo, .hamburger, .cross {
     display: none;
   }
+  .welcome{
+    margin-bottom: 8%;
+    padding: 5rem 0 15rem 0;
+  }
+  .gallery{
+    max-height: 500px;
+  }
+  article {
+    text-align: center;
+    position: relative;
+    top: -20rem;
+    margin-bottom: -10rem;
+  }
+}
 
-  article figure img {
-    display: block;
-    margin: auto;
+@media (min-width: 992px) {
+  .jumbotron{
+    padding: 0;
+    img{
+      position: relative;
+      top: 5rem;
+    }
+  }
+  .welcome{
+
   }
 }
