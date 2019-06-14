@@ -126,6 +126,16 @@ article .border {
   border: 10px solid red !important;
   /* THIS ISN'T WORKING */
 }
+form {
+  padding: 20px;
+}
+form #exampleFormControlInput1,
+form #exampleFormControlTextarea1 {
+  border-color: #720026;
+}
+form label {
+  font-family: 'Montserrat', sans-serif;
+}
 .leftalign {
   text-align: left;
 }
@@ -175,7 +185,6 @@ header {
 }
 .maxheightpics figure img {
   height: 500px;
-  /*JUst changed this from 500px, need to see if this messes anything up on other pages */
   max-height: 550px;
 }
 .centerpics figure img {
@@ -183,22 +192,6 @@ header {
   max-width: 400px;
   display: block;
   margin: auto;
-}
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2%;
-}
-footer figure img {
-  padding: 5%;
 }
 @media (min-width: 768px) {
   .desktopnav {

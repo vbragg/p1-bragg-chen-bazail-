@@ -89,6 +89,16 @@ article {
     }
 }
 
+form {
+  padding: 20px;
+  #exampleFormControlInput1, #exampleFormControlTextarea1 {
+    border-color: @color-red;
+  }
+  label {
+    font-family: @font-body;
+  }
+}
+
 .leftalign {
   text-align: left;
 }
@@ -136,7 +146,7 @@ header {
 }
 
  .maxheightpics figure img{
-  height: 500px; /*JUst changed this from 500px, need to see if this messes anything up on other pages */
+  height: 500px;
   max-height: 550px;
 }
 
@@ -147,15 +157,6 @@ header {
   margin: auto;
 }
 
-footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  padding: 2%;
-  figure img {
-    padding: 5%;
-  }
-}
 
 @media (min-width: 768px) {
     .desktopnav {
@@ -175,8 +176,4 @@ footer {
     display: block;
     margin: auto;
   }
-}
-
-@media (min-width: 992px) {
-
 }
