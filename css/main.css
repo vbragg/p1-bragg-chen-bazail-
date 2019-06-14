@@ -90,9 +90,12 @@
 header {
   background-color: #f4f2f3;
 }
-.desktopnav,
-.desktoplogo {
-  display: none;
+.navbar {
+  background-color: #f4f2f3;
+}
+.navbar img {
+  width: 80%;
+  max-width: 300px;
 }
 .jumbotron {
   max-width: 1200px;
