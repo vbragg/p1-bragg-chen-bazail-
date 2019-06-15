@@ -11,82 +11,6 @@
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
-/*****this is controlling hamburger menu *****/
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 60px 0px 15px;
-  color: #2A6C80;
-  border: 0;
-  font-size: 1.4em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-.cross {
-  background: none;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  padding: 7px 60px 0px 15px;
-  color: #2A6C80;
-  border: 0;
-  font-size: 3em;
-  line-height: 65px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-.menu {
-  z-index: 1000000;
-  font-weight: bold;
-  font-size: 0.8em;
-  width: 100%;
-  background: #f1f1f1;
-  position: absolute;
-  text-align: center;
-  font-size: 12px;
-}
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
-}
-.menu li {
-  display: block;
-  padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
-}
-.menu li:hover {
-  display: block;
-  background: #ffffff;
-  padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
-}
-.menu ul li a {
-  text-decoration: none;
-  margin: 0px;
-  color: #666;
-}
-.menu ul li a:hover {
-  color: #666;
-  text-decoration: none;
-}
-.menu a {
-  text-decoration: none;
-  color: #666;
-}
-.menu a:hover {
-  text-decoration: none;
-  color: #666;
-}
-/*hamburger menu ends*/
 header {
   background-color: #f4f2f3;
 }
@@ -97,6 +21,13 @@ header {
 }
 .navbar a {
   width: 60%;
+}
+.navbar .nav-link {
+  transition: all 0.5s ease-in-out;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+  border-bottom: 3px solid #720026;
 }
 .navbar img {
   width: 100%;
@@ -110,9 +41,6 @@ header {
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
-section {
-  padding-bottom: 2%;
-}
 .offwhite {
   background-color: #f4f2f3;
 }
@@ -157,6 +85,9 @@ section {
   font-size: 2.1875rem;
   text-align: center;
 }
+.brown p {
+  color: #f4f2f3;
+}
 .button {
   font-family: 'Montserrat', sans-serif;
   padding: 8px;
@@ -165,7 +96,7 @@ section {
   text-align: center;
   color: #f4f2f3;
 }
-.gallery figure img {
+figure img {
   object-position: center;
   /* Center the image within the element */
   width: 100%;
@@ -181,7 +112,6 @@ h3 {
 }
 h1 {
   text-align: center;
-  padding: 2% 0 1% 2%;
 }
 h1.otherpages {
   text-align: center;
@@ -192,6 +122,9 @@ h1.otherpages {
 p {
   font-family: 'Montserrat', sans-serif;
   max-width: 700px;
+}
+.intro p {
+  line-height: 190%;
 }
 /* -----------------------------------
 ...............FOOTER.................
@@ -221,19 +154,6 @@ footer figure img {
 ...........MEDIA QUERIES..............
 ----------------------------------- */
 @media (min-width: 768px) {
-  .desktopnav {
-    display: block;
-  }
-  .desktoplogo {
-    display: block;
-    margin: auto;
-  }
-  .menu,
-  .mobilelogo,
-  .hamburger,
-  .cross {
-    display: none;
-  }
   .welcome {
     margin-bottom: 8%;
     padding: 5rem 0 15rem 0;
@@ -241,7 +161,7 @@ footer figure img {
   .gallery {
     max-height: 500px;
   }
-  article {
+  .gallery article {
     text-align: center;
     position: relative;
     top: -20rem;
