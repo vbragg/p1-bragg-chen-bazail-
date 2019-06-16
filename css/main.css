@@ -41,6 +41,10 @@ header {
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
+\
+main {
+  background-color: #f4f2f3;
+}
 .offwhite {
   background-color: #f4f2f3;
 }
@@ -101,6 +105,10 @@ figure img {
   /* Center the image within the element */
   width: 100%;
   max-width: 300px;
+}
+.offset,
+.offset-up {
+  max-width: 100%;
 }
 /* -----------------------------------
 .............TYPOGRAPHY...............
@@ -175,5 +183,15 @@ footer figure img {
   .jumbotron img {
     position: relative;
     top: 5rem;
+  }
+  .offset {
+    max-width: 500px;
+    position: relative;
+    top: 100px;
+  }
+  .offset-up {
+    max-width: 500px;
+    position: relative;
+    bottom: 100px;
   }
 }

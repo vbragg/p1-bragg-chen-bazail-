@@ -1,120 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
 
-    <title>Collections</title>
+  <title>Collections</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Yeseva+One&display=swap" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  </head>
-  <body>
-
-    <button class="hamburger">&#9776; </button>
-    <button class="cross">&#735;</button>
-
-    <header>
-      <img src="img/mobile_logo.png" alt="koko logo" title="koko logo" class="mobilelogo"> <!--hide in desktop version-->
-      <img src="img/desktop_logo.png" alt="koko logo" title="koko logo" class="desktoplogo"> <!--hide in mobile version-->
-
-      <nav class="menu">
-        <ul>
-          <li><a link="index.html">Home</a></li>
-          <li><a link="about.html">About</a></li>
-          <li><a link="recipes.html">Recipes</a></li>
-          <li><a link="collections.html">Collections</a></li>
-          <li><a link="contact.html">Contact</a></li>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-md justify-content-md-center">
+      <a class="navbar-brand d-md-none d-inline" href=""><img src="img/desktop_logo.png" alt="koko logo" title="koko logo"></a>
+      <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item my-auto">
+            <a class="navbar-brand mx-0 d-none d-md-inline" href="index.html"><img src="img/desktop_logo.png" alt="koko logo" title="koko logo"></a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link w-100" href="about.html">About</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link w-100" href="recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link w-100" href="collections.html">Collections</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link w-100" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
-
-      <nav class="desktopnav">
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-          <li class="nav-item"><a href="recipes.html" class="nav-link active">Recipes</a></li>
-          <li class="nav-item"><a href="collections.html" class="nav-link active">Collections</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-        </ul>
-      </nav>
-
-    </header>
-    <h1 class="otherpages">COLLECTIONS</h1>
-
-    <main class="container-fluid">
-      <div class="centerpics">
-      <section class="red">
-        <div class="row">
-        <div class="d-lg-flex p-2 bd-highlight d-lg-flex align-items-center">
-          <figure class="col-sm-12 col-lg-5">
-            <img src="img/koko5.jpg" alt="hot chocolate" title="Hot chocolate mugs">
-          </figure>
-          <article class="col-sm-12 col-lg-7">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="otherpages p-5 offwhite">COLLECTIONS</h1>
+    <section class="red container-fluid">
+      <div class="container">
+        <div class="row p-2 bd-highlight justify-content-center align-items-center">
+          <article class="col-sm-12 col-md-5">
             <h2>Original</h2>
             <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
             </p>
           </article>
-        </div>
-        </div>
-        </section>
-
-      <section class="offwhite">
-        <div class="row">
-        <div class="d-lg-flex p-2 bd-highlight d-lg-flex align-items-center">
-          <figure class="col-sm-12 col-lg-5">
-            <img src="img/koko.jpg" alt="chocolate" title="Scattered Chocolate">
+          <figure class="col-sm-12 col-md-5">
+            <img class="offset" src="img/koko5.jpg" alt="hot chocolate" title="Hot chocolate mugs">
           </figure>
-          <article class="col-sm-12 col-lg-7">
-            <h2>CLOUDS</h2>
-            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
-            </p>
-          </article>
         </div>
-        </div>
-        </section>
-
-      <section class="brown">
-        <div class="row">
-        <div class="d-lg-flex p-2 bd-highlight d-lg-flex align-items-center">
-          <figure class="col-sm-12 col-lg-5">
-            <img src="img/koko7.jpg" alt="chocolate milk" title="Chocolate Whipped milk">
-          </figure>
-          <article class="col-sm-12 col-lg-7">
-            <h2>SOOTHE</h2>
-            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
-            </p>
-          </div>
-          </div>
-          </article>
-        </section>
       </div>
-    </main>
+    </section>
 
-    <footer class="pink d-flex flex-row bd-highlight mb-3 d justify-content-center">
-      <figure class="p-2 bd-highlight">
-        <img src="img/facebook.png" alt="Facebook" title="Facebook">
-      </figure>
-      <figure class="p-2 bd-highlight">
-        <img src="img/instagram.png" alt="Instagram" title="Instagram">
-      </figure>
-      <figure class="p-2 bd-highlight">
-        <img src="img/twitter.png" alt="Twitter" title="Twitter">
-      </figure>
-    </footer>
+    <section class="offwhite container-fluid">
+      <div class="container">
+        <div class="row flex-lg-row-reverse p-2 bd-highlight justify-content-center align-items-center">
+          <article class="col-sm-12 col-md-5">
+            <h2>Clouds</h2>
+            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
+            </p>
+          </article>
+          <figure class="col-sm-12 col-md-5 d-flex justify-content-lg-end">
+            <img class="offset" src="img/koko.jpg" alt="chocolate" title="Scattered Chocolate">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="brown container-fluid">
+      <div class="container">
+        <div class="row p-2 bd-highlight justify-content-center align-items-center">
+          <article class="col-sm-12 col-md-5">
+            <h2>Soothe</h2>
+            <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consec
+            </p>
+          </article>
+          <figure class="col-sm-12 col-md-5">
+            <img class="offset-up" src="img/koko7.jpg" alt="chocolate milk" title="Chocolate Whipped milk">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="pink d-flex flex-row bd-highlight mb-3 d justify-content-center">
+  <figure class="p-2 bd-highlight">
+    <img src="img/facebook.png" alt="Facebook" title="Facebook">
+  </figure>
+  <figure class="p-2 bd-highlight">
+    <img src="img/instagram.png" alt="Instagram" title="Instagram">
+  </figure>
+  <figure class="p-2 bd-highlight">
+    <img src="img/twitter.png" alt="Twitter" title="Twitter">
+  </figure>
+</footer>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -31,7 +31,10 @@ header {
 }
 /* -----------------------------------
 ...............BODY...................
------------------------------------ */
+----------------------------------- */\
+main{
+  background-color: @color-white;
+}
 .offwhite {
   background-color: @color-white;
   h2 {
@@ -90,7 +93,9 @@ figure img{
   width: 100%;
   max-width: 300px;
 }
-
+.offset, .offset-up{
+  max-width: 100%;
+}
 /* -----------------------------------
 .............TYPOGRAPHY...............
 ----------------------------------- */
@@ -168,5 +173,15 @@ footer {
       position: relative;
       top: 5rem;
     }
+  }
+  .offset{
+    max-width: 500px;
+    position: relative;
+    top: 100px;
+  }
+  .offset-up{
+    max-width: 500px;
+    position: relative;
+    bottom: 100px;
   }
 }
