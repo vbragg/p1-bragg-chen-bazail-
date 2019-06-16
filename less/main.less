@@ -32,9 +32,6 @@ header {
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */\
-main{
-  background-color: @color-white;
-}
 .offwhite {
   background-color: @color-white;
   h2 {
@@ -94,10 +91,6 @@ form .button{
 .form-control{
   border-color: @color-red;
 }
-.contact-form{
-  position: relative;
-  top: 10rem;
-}
 figure img{
   object-position: center; /* Center the image within the element */
   width: 100%;
@@ -111,6 +104,21 @@ figure img{
 }
 .empty{
   height: 15rem;
+}
+.red-border{
+  border-style: solid;
+  border-color: @color-red;
+  padding: 2rem;
+  height: 20%;
+}
+.red-border-bot{
+  border-width: 20px 20px 0 20px;
+}
+.red-border-right{
+  border-width: 20px 0 20px 20px;
+}
+.red-border-top{
+  border-width: 0px 20px 20px 20px;
 }
 /* -----------------------------------
 .............TYPOGRAPHY...............
@@ -128,6 +136,7 @@ h1.otherpages {
   color: @color-red;
   font-family: @font-body;
   letter-spacing: 3px;
+  background-color: @color-white;
 }
 p {
   font-family: @font-body;
@@ -193,11 +202,15 @@ footer {
   .offset{
     max-width: 500px;
     position: relative;
-    top: 10rem;
+    top: 8rem;
   }
   .offset-up{
     max-width: 500px;
     position: relative;
-    bottom: 10rem;
+    bottom: 8rem;
+  }
+  .contact-form{
+    position: relative;
+    top: 10rem;
   }
 }

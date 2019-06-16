@@ -41,19 +41,15 @@ header {
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
-\
-main {
+\ .offwhite {
   background-color: #f4f2f3;
 }
-.offwhite {
-  background-color: #f4f2f3;
-}
-.offwhite h2 {
+\ .offwhite h2 {
   color: #3d2c2e;
   font-size: 2.1875rem;
   text-align: center;
 }
-.offwhite p {
+\ .offwhite p {
   color: #3d2c2e;
 }
 .pink {
@@ -106,10 +102,6 @@ form .button {
 .form-control {
   border-color: #720026;
 }
-.contact-form {
-  position: relative;
-  top: 10rem;
-}
 figure img {
   object-position: center;
   /* Center the image within the element */
@@ -125,6 +117,21 @@ figure img {
 }
 .empty {
   height: 15rem;
+}
+.red-border {
+  border-style: solid;
+  border-color: #720026;
+  padding: 2rem;
+  height: 20%;
+}
+.red-border-bot {
+  border-width: 20px 20px 0 20px;
+}
+.red-border-right {
+  border-width: 20px 0 20px 20px;
+}
+.red-border-top {
+  border-width: 0px 20px 20px 20px;
 }
 /* -----------------------------------
 .............TYPOGRAPHY...............
@@ -142,6 +149,7 @@ h1.otherpages {
   color: #720026;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
+  background-color: #f4f2f3;
 }
 p {
   font-family: 'Montserrat', sans-serif;
@@ -203,11 +211,15 @@ footer figure img {
   .offset {
     max-width: 500px;
     position: relative;
-    top: 10rem;
+    top: 8rem;
   }
   .offset-up {
     max-width: 500px;
     position: relative;
-    bottom: 10rem;
+    bottom: 8rem;
+  }
+  .contact-form {
+    position: relative;
+    top: 10rem;
   }
 }
