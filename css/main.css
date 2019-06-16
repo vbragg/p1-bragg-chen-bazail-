@@ -100,6 +100,16 @@ main {
   text-align: center;
   color: #f4f2f3;
 }
+form .button {
+  background: #720026;
+}
+.form-control {
+  border-color: #720026;
+}
+.contact-form {
+  position: relative;
+  top: 10rem;
+}
 figure img {
   object-position: center;
   /* Center the image within the element */
@@ -109,6 +119,12 @@ figure img {
 .offset,
 .offset-up {
   max-width: 100%;
+}
+.icon {
+  max-width: 50px;
+}
+.empty {
+  height: 15rem;
 }
 /* -----------------------------------
 .............TYPOGRAPHY...............
