@@ -203,11 +203,11 @@ footer figure img {
   .offset {
     max-width: 500px;
     position: relative;
-    top: 100px;
+    top: 10rem;
   }
   .offset-up {
     max-width: 500px;
     position: relative;
-    bottom: 100px;
+    bottom: 10rem;
   }
 }
