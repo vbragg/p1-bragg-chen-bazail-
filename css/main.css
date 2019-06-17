@@ -123,6 +123,7 @@ figure img {
   border-color: #720026;
   padding: 2rem;
   height: 20%;
+  border-width: 20px 20px 20px 20px;
 }
 .red-border-bot {
   border-width: 20px 20px 0 20px;
